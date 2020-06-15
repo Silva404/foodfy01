@@ -44,11 +44,20 @@ header {
     padding: 32px;
 }
 
+
+
 #wrapper img {
-    border-radius: 50%;
+    background: rgba(243, 243, 243,0.2);
+    padding: 30px;
+    border-radius: 8px;
     height: 300px;
-    border: 5px solid var(--color-green);
     margin-bottom: 32px;
+}
+
+#wrapper img .redondo{
+    border-radius: 50%;
+
+    border: 5px solid var(--color-green);
 }
 
 #wrapper h1 {
@@ -62,6 +71,12 @@ header {
     line-height: 34px;
     margin-top: 8px;
     opacity: 0.8;
+}
+
+#wrapper h3 {
+    font-size: 22px;
+    line-height: 52px;
+    opacity: 60%;
 }
 
 #wrapper p {
@@ -78,4 +93,11 @@ header {
 
 .space {
     margin-bottom: 30px;
+}
+
+ul  {
+    list-style: none;
+    margin: 10px 0;
+
+    opacity: 60%;
 }
