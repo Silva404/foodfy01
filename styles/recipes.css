@@ -32,9 +32,14 @@
     margin-bottom: 20px;
 }
 
-
+body {
+   position: relative;
+}
 
 footer {
+    margin-top: 40px;
+
+    position: fixed bottom 100vh;
 
     display: flex;
     align-items: center;
@@ -46,4 +51,8 @@ footer {
     line-height: 16px;
     color: #999999;
     background: #EEEEEE;
+}
+
+#modal {
+    
 }

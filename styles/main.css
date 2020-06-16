@@ -12,14 +12,15 @@ a {
 
 body {
     text-rendering: optimizeLegibility !important;
-    -webkit-font-feature-settings: antialiased !important;  
+    -webkit-font-smoothing: antialiased !important;  
     font-family: Roboto;
+    height: 100vh;
 }
 
 .content {
     max-width: 940px;
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto;    
 }
 
 header {
