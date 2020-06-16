@@ -5,22 +5,21 @@ const receitaShow = document.querySelector('#modal .receita')
 //a imagem especifica de cada card
 const cardImg = document.querySelectorAll('.card img')
 
-for (let img of cardImg) {    
-    img.addEventListener('click', () => {
-        modal.classList.remove('hide')
-        receitaShow.innerHTML += `<img src='${img.src}'></img>`
-    })
-}
+// for (let img of cardImg) {    
+//     img.addEventListener('click', () => {
+//         modal.classList.remove('hide')
+//         receitaShow.innerHTML += `<img src='${img.src}'></img>`
+//     })
+// }
 
 
 for (let card of cards) {    
     card.addEventListener('click', () => {
-        console.log(card.textContent)
-        console.log(card.innerHTML)
+        console.log(card.getElementsByClassName('.teste').innerHTML)
 
         modal.classList.remove('hide')
-        receitaShow.innerHTML += `<h4>${card.textContent}</h4> 
-        <p>${card.getAttribute('p')}</p>`
+        receitaShow.innerHTML += `<h4>${card.innerHTML}</h4> 
+        <p>${card.getElementsByClassName('.teste').innerHTML}</p>`
     })
 }
 
