@@ -54,5 +54,39 @@ footer {
 }
 
 #modal {
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.8);
+
+    position: fixed;
+    top: 0;
+
     
+}
+
+#modal .show {
+    width: 60%;
+    height: 60%;
+    border-radius: 16px;
+
+    background: #EEEEEE;
+    margin: 25vh auto; 
+
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+}
+
+#modal.hide {
+    display: none;
+}
+
+#modal p {
+   
+    text-align: center;
+    color: #777777;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: normal;
+    margin-bottom: 4vh;
 }
