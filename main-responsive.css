@@ -1,7 +1,14 @@
 @media (max-width: 900px) {
+    header {
+        width: 70%; 
+    }
     #hero .text {
         margin: auto 30px;
     }
     #hero {
         background: #FBDFDB url('/assets/chef.png') no-repeat 58vw;
+    }
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
