@@ -1,11 +1,11 @@
 #acessos  {
-    margin: 40px 0;
+    margin: 60px 0;
 }
 
 .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 20px;    
 }
 
 .card img {
@@ -61,16 +61,17 @@ footer {
     position: fixed;
     top: 0;
 
-    
+    text-align: center;   
 }
 
 #modal .show {
-    width: 60%;
-    height: 60%;
+    padding: 25px;
+    width: 660px;
+    height: 440px;
     border-radius: 16px;
 
     background: #EEEEEE;
-    margin: 25vh auto; 
+    margin: 18vh auto; 
 
     display: flex;
     flex-direction: column; 
@@ -81,12 +82,31 @@ footer {
     display: none;
 }
 
-#modal p {
-   
-    text-align: center;
+#modal .receita img {
+    border-radius: 16px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+#modal .receita h4 {
+    margin: 20px 0 10px;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: normal;
+    
+}
+
+#modal .receita p {
+    color: #777777;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+}
+
+#modal p {       
     color: #777777;
     font-size: 16px;
     line-height: 28px;
     font-weight: normal;
-    margin-bottom: 4vh;
 }
