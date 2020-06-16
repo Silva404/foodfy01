@@ -1,0 +1,7 @@
+@media (max-width: 900px) {
+    #hero .text {
+        margin: auto 30px;
+    }
+    #hero {
+        background: #FBDFDB url('/assets/chef.png') no-repeat 58vw;
+}

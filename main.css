@@ -1,0 +1,87 @@
+@import 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Ubuntu:wght@400;700&display=swap';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-feature-settings: antialiased !important;  
+    font-family: Roboto;
+}
+
+.content {
+    max-width: 940px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%; 
+    margin: 30px 0 0;   
+}
+
+header .options a {
+    color: #111111;
+    margin-left: 40px;
+}
+
+#hero {
+    width: 100%;
+    background: #FBDFDB url('/assets/chef.png') no-repeat 50vw;
+    height: 366px;
+    border-radius: 30px;
+
+    display: flex;
+    margin: 50px 0;
+}
+
+#hero .text {
+    max-width: 316px;
+    height: 150px;
+    margin: auto 80px;
+}
+
+#hero h1 {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 20px;
+}
+
+
+#hero h4 {
+    opacity: 70%;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 16px;
+}
