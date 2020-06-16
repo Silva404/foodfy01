@@ -1,0 +1,49 @@
+#acessos  {
+    margin: 40px 0;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+.card h4 {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+    
+}
+
+.card p {
+    color: #777777;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: normal;
+}
+
+.cards p {
+    margin-bottom: 20px;
+}
+
+
+
+footer {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 62px;    
+
+    font-size: 14px;
+    line-height: 16px;
+    color: #999999;
+    background: #EEEEEE;
+}

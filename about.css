@@ -1,65 +1,37 @@
-#hero {
-    width: 100%;
-    background: #FBDFDB url('/assets/chef.png') no-repeat 50vw;
-    height: 366px;
-    border-radius: 30px;
-
-    display: flex;
-    margin: 50px 0;
+#about {
+    margin: 50px 0 10px;
 }
 
-#hero .text {
-    max-width: 316px;
-    height: 150px;
-    margin: auto 80px;
-}
-
-#hero h1 {
-    font-size: 32px;
-    line-height: 38px;
-    margin-bottom: 20px;
+.topics h1 {
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: 20px;
 }
 
 
-#hero h4 {
-    opacity: 70%;
+.topics h3 {    
     font-size: 18px;
     line-height: 28px;
-    font-weight: normal;
 }
 
-#acessos h2 {
-    margin: 20px 0;
-    font-weight: 24px;
-    line-height: 34px;
-}
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.card img {
-    width: 100%;
-    border-radius: 16px;
-    margin-bottom: 20px;
-}
-
-.card h4 {
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: normal;
-    
-}
-
-.card p {
+.topics p {
     color: #777777;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 28px;
     font-weight: normal;
+
+    margin: 10px 0 50px;
 }
 
-.cards p {
-    margin-bottom: 20px;
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 62px;
+
+    font-size: 14px;
+    line-height: 16px;
+    color: #999999;
+    background: #EEEEEE;
 }
