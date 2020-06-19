@@ -1,4 +1,9 @@
 @import 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Ubuntu:wght@400;700&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet';
+
+:root {
+    --main-color: #D54F44;
+}
 
 * {
     margin: 0;
@@ -29,7 +34,9 @@ header {
     align-items: center;
     justify-content: space-between;
     width: 40%; 
-    margin: 30px 0 0;   
+    margin: 30px 0 0; 
+    
+    font-family: Montserrat;
 }
 
 header .options a {

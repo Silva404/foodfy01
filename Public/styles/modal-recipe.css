@@ -9,6 +9,11 @@
 .card.shadow img {
     margin-bottom: 5px;
 }
+
+.card-text-n {
+    /* transition: 400ms; */
+}
+
 .card.shadow {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
     padding-bottom: 10px;
@@ -21,20 +26,53 @@
     max-width: 70%;
     margin: 0 auto 20px;  
     
-    opacity: 50%;
-    
+    position: relative;
 }
 
 .card-text-n img {
-    height: 20px;
+    height: 25px;
     margin: 0;
+}
+
+.card-text-n .top::before {
+    content: '1';
+    color: #eeeeee;
+    font-size: 22px;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    height: 50px;
+    width: 50px;
+    background: var(--main-color);
+    border-radius: 50%;
+    position: absolute;
+    left: 190px;
+    top: -170px;
+}
+
+.card-text-n .top::after {
+    content: '';
+    height: 40px;
+    width: 1px;
+    background: rgb(0, 0, 0,0.1);
+    position: absolute;
+    right: 50%;
 }
 
 .card-text-n .top h4 {
     /* display: flex; */
-    font-size: 14px;
+    font-size: 14px;   
+    opacity: 50%; 
 }
 
+
+.card-text-n .top span img {
+    margin: 0;
+}
 .card-text-n .top h4 img {
     margin-bottom: 0;
 }
@@ -45,6 +83,6 @@
     font-size: 14px;
     padding: 8px 20px;
     color: #eeeeee;
-    background: #D54F44;
+    background: var(--main-color);
     border-radius: 20px;    
 }
