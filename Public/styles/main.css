@@ -15,6 +15,7 @@ body {
     -webkit-font-smoothing: antialiased !important;  
     font-family: Roboto;
     height: 100vh;
+    position: relative;
 }
 
 .content {

@@ -53,6 +53,10 @@
     
 }
 
+.card p span  {
+    color: #D54F44;
+}
+
 .card p {
     color: #777777;
     font-size: 14px;
@@ -62,19 +66,4 @@
 
 .cards p {
     margin-bottom: 20px;
-}
-
-footer {
-    margin-top: 40px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    height: 62px;
-
-    font-size: 14px;
-    line-height: 16px;
-    color: #999999;
-    background: #EEEEEE;
 }

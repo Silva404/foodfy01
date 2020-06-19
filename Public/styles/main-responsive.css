@@ -12,3 +12,47 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+@media (max-width: 600px) {
+    header {
+        width: 90%;
+    }
+    #hero {
+        background: #FBDFDB url('/assets/chef.png') no-repeat 65vw;
+    }
+}
+
+@media (max-width: 525px) {
+    #hero {
+        background: #FBDFDB url('/assets/chef.png') no-repeat 75vw;
+    }
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 475px) {
+    header {
+        width: 100%;
+    }    
+    #hero {
+        background: #FBDFDB url('/assets/chef.png') no-repeat 90vw;
+    }
+    #hero .text {
+        max-width: 450px;
+    }
+    #hero h1 {
+        font-size: 42px;
+        line-height: 52px;
+        margin-bottom: 30px;
+        text-align: center;
+    }    
+    
+    #hero h4 {
+        opacity: 70%;
+        font-size: 18px;
+        line-height: 28px;
+        text-align: center;
+
+    }     
+}

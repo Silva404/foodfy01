@@ -1,0 +1,21 @@
+body {
+    position: relative;
+    height: 100vh;
+ }
+ 
+ footer {
+     margin-top: 20%;
+ 
+     position: fixed bottom 100vh;
+ 
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ 
+     height: 62px;    
+ 
+     font-size: 14px;
+     line-height: 16px;
+     color: #999999;
+     background: #EEEEEE;
+ }
