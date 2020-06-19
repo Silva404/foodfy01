@@ -1,30 +1,29 @@
 const cards = document.querySelectorAll('.card')
-const modal = document.querySelector('#moda-home')
-const receitaShow = document.querySelector('#modal .receita')
+
+const autor = document.querySelector('.card-text')
+const descricao = document.querySelector('.card-text-n')
+const shadow = document.querySelector('.card.shadow')
+
+
 
 for (let card of cards) {
     card.addEventListener('mouseover', () => {
 
-        modal.classList.remove('hide')
-        receitaShow.innerHTML += `${card.innerHTML}`
+        descricao.classList.remove('hide')
+        autor.classList.add('hide')
+        shadow.classList.add('shadow')
+        // receitaShow.innerHTML += `${card.innerHTML}`
     })
 }
 
+for (let card of cards) {
+    card.addEventListener('mouseout', () => {
 
+        autor.classList.remove('hide')
+        shadow.classList.remove('shadow')
+        descricao.classList.add('hide')
+        // receitaShow.innerHTML += `${card.innerHTML}`
+    })
+}
 
-
-// for (let card of cards) {
-//     card.addEventListener('click', () => {
-
-//         modal.classList.remove('hide')
-//         receitaShow.innerHTML += `${card.innerHTML}`
-//     })
-// }
-
-// document
-//     .querySelector('#close')
-//     .addEventListener('click', () => {
-//         modal.classList.add('hide')
-//         receitaShow.innerHTML = ''
-//     })
 

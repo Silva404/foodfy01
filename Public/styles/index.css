@@ -46,15 +46,13 @@
     background: #f5e1df;
     border-radius: 16px;
     text-align: center;
+    padding-bottom: 20px;
 }
 
-.card {
-    
-}
 
 .card img {
     width: 100%;
-    border-radius: 16px;
+    border-radius: 16px 16px 0 0;
     margin-bottom: 20px;
 }
 

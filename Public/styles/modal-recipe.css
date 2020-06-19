@@ -1,3 +1,50 @@
-#modal.hide {
+.card-text.hide {
     display: none;
+}
+
+.card-text-n.hide {
+    display: none;
+}
+
+.card.shadow img {
+    margin-bottom: 5px;
+}
+.card.shadow {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+    padding-bottom: 10px;
+}
+
+.card-text-n .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 70%;
+    margin: 0 auto 20px;  
+    
+    opacity: 50%;
+    
+}
+
+.card-text-n img {
+    height: 20px;
+    margin: 0;
+}
+
+.card-text-n .top h4 {
+    /* display: flex; */
+    font-size: 14px;
+}
+
+.card-text-n .top h4 img {
+    margin-bottom: 0;
+}
+
+
+.card-text-n a {
+    margin-top: 20px;
+    font-size: 14px;
+    padding: 8px 20px;
+    color: #eeeeee;
+    background: #D54F44;
+    border-radius: 20px;    
 }
