@@ -38,6 +38,18 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+
+    
+}
+
+.card {
+    background: #f5e1df;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.card {
+    
 }
 
 .card img {
@@ -47,6 +59,7 @@
 }
 
 .card h4 {
+    
     font-size: 18px;
     line-height: 24px;
     font-weight: normal;
