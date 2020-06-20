@@ -23,8 +23,8 @@ server.get('/recipes', (req, res) => {
 })
 
 
-server.get('/about', (req, res) => {
-    res.render('about')
+server.get('/newrecipe', (req, res) => {
+    res.render('new-recipe')
 })
 
 

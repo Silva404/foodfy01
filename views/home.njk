@@ -3,7 +3,7 @@
 {% block styles %}
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/modal-recipe.css">
-
+    <link rel="stylesheet" href="styles/carousel.css">
 {% endblock styles %}
 
 {% block content %}
@@ -12,34 +12,65 @@
             <a href="/"><img src="assets/logo.png" alt="Logo Foodfy"></a>
 
             <div class="options">
-                <a href="/about">Sobre</a>
+                <a href="/newrecipe">Enviar sua receita</a>
                 <a href="/recipes">Receitas</a>
             </div>
         </header>
 
         <section id="hero">
-            <div class="text">
+            {# <div class="text">
                 <h1>As melhores receitas</h1>
                 <h4>Aprenda a construir os melhores pratos com receitas criadas por profissionais do mundo inteiro.
                 </h4>
-            </div>
+            </div> #}
 
+            <div class="carousel">
+                <button class="carousel_button carousel_button--left">
+                    <img src="/assets/arrow-left.svg" alt="arrow">
+                </button>
 
-            <div class="slider">
-                <div class="img-box">
-                {# imagem inicial #}
-                    <img src="/assets/chef.png" alt="Chef">
+                <div class="carousel_track-container">
+                    <ul class="carousel_track">
+                        <li class="carousel_slide">
+                            <div class="carousel-text">
+                                <h1>As melhores receitas</h1>
+                                <h4>Aprenda a construir os melhores pratos com receitas criadas por profissionais do mundo inteiro.
+                                </h4>
+                            </div>
+                            <img class="carousel_images" src="/assets/doce.png" alt="">
+                        </li>
+
+                        <li class="carousel_slide">
+                            <div class="carousel-text">
+                                <h1>Olha aquiii aqui</h1>
+                                <h4>Bolo de tanasdasdá com asdasdasdas fazer e pa</h4>
+                            </div>
+                            <img class="carousel_images" src="/assets/pizza.png" alt="">
+                        </li>
+
+                        <li class="carousel_slide">
+                            <div class="carousel-text">
+                                <h1>Legal mudou</h1>
+                                <h4>Bolo de asdasdasdasdas sadasdasdas asdasd e pa</h4>
+                            </div>
+                            <img class="carousel_images" src="/assets/burger.png" alt="">
+                        </li>
+                    </ul>
                 </div>
 
-                {# botões de avançar e voltar #}
-                <button class="btn">Prev</button>
-                <button class="btn">Next</button>
+                <button class="carousel_button  carousel_button--right">
+                    <img src="/assets/arrow-right.svg" alt="arrow">
+                </button>
+
+                <div class="carousel_nav">
+                    <button class="carousel-indicator"></button>
+                    <button class="carousel-indicator"></button>
+                    <button class="carousel-indicator"></button>
+                </div>
             </div>
 
         </section>
-        
 
-        
         <section id="acessos">
             <h2>Mais acessadas</h2>
             <div class="cards">
@@ -123,16 +154,7 @@
     </div>
 {% endblock content %}
 
-{% block modal %}
-    <div id="modal" class="hide">
-        <div class="show">
-            <div class="receita"></div>
-            <p id="close">Fechar modal</p>
-        </div>
-
-    </div>
-{% endblock modal %}
-
 {% block scripts %}
     <script src="scripts/recipes-main.js"></script>
+    <script src="scripts/carousel.js"></script>
 {% endblock scripts %}

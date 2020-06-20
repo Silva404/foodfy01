@@ -5,6 +5,7 @@ const descricao = document.querySelector('.card-text-n')
 const shadow = document.querySelector('.card.shadow')
 
 
+// CONSERTAR E FAZER UM LOOP QUE APAREÇA A INFO APENAS EM UMA DAS RECEITAS
 
 for (let card of cards) {
     card.addEventListener('mouseover', () => {

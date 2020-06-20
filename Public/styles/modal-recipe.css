@@ -11,7 +11,7 @@
 }
 
 .card-text-n {
-    /* transition: 400ms; */
+    padding-bottom: 5px;
 }
 
 .card.shadow {
@@ -34,7 +34,7 @@
     margin: 0;
 }
 
-.card-text-n .top::before {
+/* .card-text::before {
     content: '1';
     color: #eeeeee;
     font-size: 22px;
@@ -50,9 +50,13 @@
     background: var(--main-color);
     border-radius: 50%;
     position: absolute;
-    left: 190px;
-    top: -170px;
-}
+    left: 230px;
+    top: 30px;
+} */
+
+
+
+
 
 .card-text-n .top::after {
     content: '';
