@@ -15,9 +15,30 @@ const setSlidePosition = (slide, index) => {
 slides.forEach(setSlidePosition)
 
 
+const sliderMove = (amount, currentSlide, nextSlide) => {
+    track.style.transform = 'translateX(-' + amount + ')'
+    currentSlide.classList.remove('current-slide')
+    nextSlide.classList.add('current-slide')
+}
+
+
+
+// move left
+prevBtn.addEventListener('click', e => {
+    const currentSlide = track.querySelector('.current-slide')
+    const prevSlide = currentSlide.previousElementSibling
+    const amountToMove = prevSlide.style.left
+
+    //move to the next slide
+    sliderMove(amountToMove, currentSlide, prevSlide)
+})
+
 // move to right
 nextBtn.addEventListener('click', e => {
     const currentSlide = track.querySelector('.current-slide')
+    const nextSlide = currentSlide.nextElementSibling
+    const amountToMove = nextSlide.style.left
 
-    
+    //move to the next slide
+    sliderMove(amountToMove, currentSlide, nextSlide)
 })

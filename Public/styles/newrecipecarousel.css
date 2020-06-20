@@ -1,7 +1,6 @@
 .carousel {
     position: relative;
-    width: 100%;
-
+    width: 60%;
     height: 366px;
     border-radius: 20px;
     margin: 0 auto;
@@ -51,7 +50,6 @@
 
 .carousel_slide img {
     height: 100%;
-    width: 50%;
     object-fit: cover;
     border-radius: 0 20px 20px 0;
 }
