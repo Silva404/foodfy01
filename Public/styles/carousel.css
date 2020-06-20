@@ -1,14 +1,15 @@
 .carousel {
     position: relative;
-    width: 100%;
+    width: 60%;
     height: 366px;
     border-radius: 20px;
+    margin: 0 auto;
 }
 
 .carousel_track-container {
     height: 100%;
 
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .carousel_track h1,
@@ -49,7 +50,6 @@
 
 .carousel_slide img {
     height: 100%;
-    max-width: 50%;
     object-fit: cover;
     border-radius: 0 20px 20px 0;
 }
@@ -107,6 +107,6 @@
     background: rgb(19, 18, 18, 1);
 }
 
-.is-hidden {
+/* .is-hidden {
     display: none;
-}
+} */
