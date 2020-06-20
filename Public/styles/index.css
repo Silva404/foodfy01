@@ -1,6 +1,6 @@
 #hero {
     width: 100%;
-    background: #FBDFDB url('/assets/chef.png') no-repeat 50vw;
+    background: #FBDFDB;
     height: 366px;
     border-radius: 30px;
 
@@ -15,9 +15,10 @@
 }
 
 #hero h1 {
-    font-size: 32px;
+    font-size: 36px;
     line-height: 38px;
     margin-bottom: 20px;
+    
 }
 
 
@@ -25,8 +26,11 @@
     opacity: 70%;
     font-size: 18px;
     line-height: 28px;
-    font-weight: normal;
+    font-weight: 300;
+
+    font-family: Montserrat;
 }
+
 
 
 #acessos {
