@@ -13,7 +13,10 @@ const setSlidePosition = (slide, index) => {
 }
 
 slides.forEach(setSlidePosition)
+//                  ==========            //
 
+
+// movendo os slides
 const moveSlide = (currentSlide, newSlide, amount) => {
     track.style.transform = 'translateX(-' + amount + ')'
     currentSlide.classList.remove('current-slide')
@@ -22,7 +25,7 @@ const moveSlide = (currentSlide, newSlide, amount) => {
 
 
 
-// mover com cliques
+// poder passar os slides com os clicks
 prevBtn.addEventListener('click', () => {
     const currentSlide = track.querySelector('.current-slide')
     const prevSlide = currentSlide.previousElementSibling
