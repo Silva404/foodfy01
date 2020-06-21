@@ -1,7 +1,7 @@
 # Foodfy
 
-<img src=”/readme-gifs/foodfy-desktop.gif”>
-<img src=”/readme-gifs/foodfy-mobile.gif”>
+<img src=”readme-gifs/foodfy-desktop.gif”>
+<img src=”readme-gifs/foodfy-mobile.gif”>
 <!-- <img src=”/readme-gifs/foodfy-mobile.gif” height="400px" width="400px"> -->
 
 ### About this project
