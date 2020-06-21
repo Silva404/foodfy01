@@ -10,7 +10,7 @@
 .carousel_track-container {
     height: 100%;
 
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .carousel_track h1,
