@@ -15,8 +15,8 @@
 }
 
 #hero h1 {
-    font-size: 36px;
-    line-height: 38px;
+    font-size: 3.6rem;
+    line-height: 4.2rem;
     margin-bottom: 20px;
     
 }
@@ -24,8 +24,8 @@
 
 #hero h4 {
     opacity: 70%;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
     font-weight: 300;
 
     font-family: Montserrat;
@@ -68,8 +68,8 @@
 
 .card h4 {
     
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
     font-weight: normal;
     
 }
@@ -80,11 +80,15 @@
 
 .card p {
     color: #777777;
-    font-size: 14px;
-    line-height: 28px;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
     font-weight: normal;
 }
 
 .cards p {
     margin-bottom: 20px;
+}
+
+nav {
+    display: none;
 }

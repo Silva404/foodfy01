@@ -3,21 +3,21 @@
 }
 
 .topics h1 {
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
     margin-top: 20px;
 }
 
 
 .topics h3 {    
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
 }
 
 .topics p {
     color: #777777;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
     font-weight: normal;
 
     margin: 10px 0 50px;
@@ -32,8 +32,8 @@ footer {
 
     height: 62px;
 
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
     color: #999999;
     background: #EEEEEE;
 }

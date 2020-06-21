@@ -69,7 +69,7 @@
 
 .card-text-n .top h4 {
     /* display: flex; */
-    font-size: 14px;   
+    font-size: 1.4rem;  
     opacity: 50%; 
 }
 
@@ -84,7 +84,7 @@
 
 .card-text-n a {
     margin-top: 20px;
-    font-size: 14px;
+    font-size: 1.4rem;
     padding: 8px 20px;
     color: #eeeeee;
     background: var(--main-color);
