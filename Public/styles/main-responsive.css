@@ -5,12 +5,6 @@
     #hero .text {
         margin: auto 30px;
     }
-    #hero {
-        /* background: #FBDFDB url('/assets/chef.png') no-repeat 58vw; */
-    }
-    /* .cards {
-        grid-template-columns: repeat(3, 1fr);
-    } */
     .carousel_slide {    
         flex-direction: column-reverse;
     }
