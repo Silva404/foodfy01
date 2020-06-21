@@ -1,7 +1,7 @@
 # Foodfy
 
-<img src=”/foodfy-desktop.gif” height="400px" width="400px">
-<img src=”/foodfy-mobile.gif” height="400px" width="400px">
+<img src=”/readme-gifs/foodfy-desktop.gif” height="300px" width="400px">
+<img src=”/readme-gifs/foodfy-mobile.gif” height="400px" width="400px">
 
 ### About this project
 Foodfy is a responsive web site to find your favorite recipes and share your worldwide!
