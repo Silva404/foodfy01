@@ -1,8 +1,6 @@
 # Foodfy
 > Foodfy is a responsive web site to find and share your favorite recipes worldwide!
 
-[![NPM 6.14.4][npm-image]][npm-url]
-
 
 <h1 align="left">
     <img src="https://user-images.githubusercontent.com/62123441/85238123-244a3a00-b402-11ea-8463-e749b6baf8ff.gif" width="100%">
