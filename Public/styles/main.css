@@ -35,6 +35,10 @@ body {
     margin: 0 auto;    
 }
 
+section {
+    margin-bottom: 40px;
+}
+
 header {
     max-width: 940px;
     display: flex;
@@ -49,4 +53,7 @@ header {
 header .options a {
     color: #111111;
     margin-left: 40px;
+}
+nav {
+    display: none;
 }

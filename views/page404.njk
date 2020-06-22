@@ -1,0 +1,31 @@
+{% extends 'layout.njk' %}
+
+{% block styles %}
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/newrecipecarousel.css">
+{% endblock styles %}
+
+{% block title %}
+    <title>Receita não encontrada</title>
+{% endblock title %}
+
+{% block content %}
+    <div class="content">
+
+        <section id="about">
+            <div class="topics">
+                <h1>ERROR 404</h1>
+                <h2>Desculpe, não foi possível localizar sua receita!</h2>
+                <p>Você não tem nenhuma receita enviada, que tal <a href="/recipes">outras</a> ?
+                </p>
+
+            </div>
+        </section>
+    </section>
+
+</div>
+{% endblock content %}
+
+{% block scripts %}
+<script src="/scripts/recipecarousel.js"></script>
+{% endblock scripts %}

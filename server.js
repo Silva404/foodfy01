@@ -28,6 +28,10 @@ server.get('/newrecipe', (req, res) => {
     res.render('new-recipe')
 })
 
+server.get('/page404', (req, res) => {
+    res.render('page404')
+})
+
 server.get('/your-recipe', (req, res) => {
     const id = req.query.id
 
@@ -36,10 +40,9 @@ server.get('/your-recipe', (req, res) => {
             return true
         }
     })
-    if (!recipe) {
-        res.send('Receita não encontrada.')
-        return
-    }
+    // if (!recipe) {
+    //     res.send('Page not founded')
+    // }
 
     res.render('your-recipe', { recipes: recipe })
 })

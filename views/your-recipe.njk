@@ -3,6 +3,7 @@
 {% block styles %}
     <link rel="stylesheet" href="styles/about.css">
     <link rel="stylesheet" href="styles/newrecipecarousel.css">
+    
 {% endblock styles %}
 
 {% block title %}
@@ -46,26 +47,34 @@
 
                 <h4>INGREDIENTES</h4>
                 <div class="ingredientes">
-                    {% for ingredientes in recipes.ingredients %}
-                        <p>
-                            {{ ingredientes }}
-                        </p>
-                    {% endfor %}
 
+                    <div class="left">
+                        {% for ingredientes in recipes
+                            .ingredients
+                            .slice(0, 5) %}
+                            <ul>
+                                <li>{{ ingredientes }}</li>
+                            </ul>
+                        {% endfor %}
+                    </div>
+                    <div class="right">
+                        {% for ingredientes in recipes
+                            .ingredients
+                            .slice(6, 10) %}
+                            <ul>
+                                <li>{{ ingredientes }}</li>
+                            </ul>
+                        {% endfor %}
+                    </div>
                 </div>
 
                 <h4>PREPARAÇÃO</h4>
-                {% for ingredientes in recipes.preparation %}
-                        <p>
-                            {{ ingredientes }}
-                        </p>
-                    {% endfor %}
-                {# <ul>
-                    <li>Temperar os filés com sal, pimenta e suco de ½ limão.</li>
-                    <li>Passar os filés pela farinha de trigo, em seguida pelo ovo e depois pela farinha de pão. Reservar.</li>
-                    <li>Aquecer o óleo em uma frigideira.</li>
-                    
-                </ul> #}
+                {% for instructions in recipes.preparation %}
+                    <ul>
+                        <li>{{ instructions }}</li>
+                    </ul>
+                {% endfor %}
+
             </div>
         </section>
     </section>

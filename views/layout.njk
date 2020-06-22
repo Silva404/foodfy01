@@ -5,10 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="styles/main.css">
-        <link rel="stylesheet" href="styles/footer.css">
+       
        
         {% block styles %}{% endblock styles %}
          <link rel="stylesheet" href="styles/main-responsive.css">
+          <link rel="stylesheet" href="styles/footer.css">
 
         {% block title %}
             <title>Foodfy</title>
@@ -20,7 +21,7 @@
             <a href="/"><img src="assets/logo.png" alt="Logo Foodfy"></a>
 
             <div class="options">
-                <a href="/newrecipe">Sua receita</a>
+                <a href="/your-recipe">Sua receita</a>
                 <a href="/recipes">Receitas</a>
             </div>
 
@@ -34,7 +35,7 @@
                     <ul>
                         <a href="/">PÁGINA INICIAL</a>
                         <li>
-                            <a href="/newrecipe">SUA RECEITA</a>
+                            <a href="/your-recipe">SUA RECEITA</a>
                         </li>
                         <li>
                             <a href="/recipes">OUTRAS RECEITAS</a>
@@ -56,7 +57,9 @@
         {% block modal %}
         {% endblock modal %}
 
+
         {% block scripts %}{% endblock scripts %}
+         <script src="scripts/menu.js"></script>
 
     </body>
 </html>
