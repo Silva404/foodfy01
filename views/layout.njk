@@ -16,7 +16,37 @@
 
     </head>
     <body>
-        {% block content %}{% endblock content %}
+        <header>
+            <a href="/"><img src="assets/logo.png" alt="Logo Foodfy"></a>
+
+            <div class="options">
+                <a href="/newrecipe">Sua receita</a>
+                <a href="/recipes">Receitas</a>
+            </div>
+
+            <div class="menu-section">
+                <div class="menu-toggle">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </div>
+                <nav>
+                    <ul>
+                        <a href="/">PÁGINA INICIAL</a>
+                        <li>
+                            <a href="/newrecipe">SUA RECEITA</a>
+                        </li>
+                        <li>
+                            <a href="/recipes">OUTRAS RECEITAS</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        {% block content %}
+            
+        {% endblock content %}
 
         <footer>
             <p>Todos direitos reservados, receitas Foodfy.

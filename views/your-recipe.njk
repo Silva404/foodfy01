@@ -1,0 +1,78 @@
+{% extends 'layout.njk' %}
+
+{% block styles %}
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/newrecipecarousel.css">
+{% endblock styles %}
+
+{% block title %}
+    <title>Sobre nós</title>
+{% endblock title %}
+
+{% block content %}
+    <div class="content">
+
+        <section id="about">
+
+            <div class="carousel">
+                <button class="carousel_button carousel_button--left">
+                    <img src="/assets/arrow-right.svg" alt="Arrow left">
+                </button>
+
+                <div class="carousel_track-container">
+                    <ul class="carousel_track">
+                        <li class="carousel_slide current-slide">
+                            <img class="carousel_images" src="/assets/01.jpg" alt="">
+                        </li>
+                        <li class="carousel_slide">
+                            <img class="carousel_images" src="/assets/02.jpg" alt="">
+                        </li>
+                        <li class="carousel_slide">
+                            <img class="carousel_images" src="/assets/03.jpg" alt="">
+                        </li>
+                    </ul>
+
+                </div>
+
+                <button class="carousel_button carousel_button--right">
+                    <img src="/assets/arrow-left.svg" alt="Arrow left">
+                </button>
+            </div>
+
+            <div class="topics">
+                <h1>{{ recipes.title }}</h1>
+                <p>{{ recipes.information }}
+                </p>
+
+                <h4>INGREDIENTES</h4>
+                <div class="ingredientes">
+                    {% for ingredientes in recipes.ingredients %}
+                        <p>
+                            {{ ingredientes }}
+                        </p>
+                    {% endfor %}
+
+                </div>
+
+                <h4>PREPARAÇÃO</h4>
+                {% for ingredientes in recipes.preparation %}
+                        <p>
+                            {{ ingredientes }}
+                        </p>
+                    {% endfor %}
+                {# <ul>
+                    <li>Temperar os filés com sal, pimenta e suco de ½ limão.</li>
+                    <li>Passar os filés pela farinha de trigo, em seguida pelo ovo e depois pela farinha de pão. Reservar.</li>
+                    <li>Aquecer o óleo em uma frigideira.</li>
+                    
+                </ul> #}
+            </div>
+        </section>
+    </section>
+
+</div>
+{% endblock content %}
+
+{% block scripts %}
+<script src="/scripts/recipecarousel.js"></script>
+{% endblock scripts %}

@@ -4,45 +4,14 @@
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/modal-recipe.css">
     <link rel="stylesheet" href="styles/carousel.css">
+    <link rel="stylesheet" href="styles/main-responsive.css">
 {% endblock styles %}
 
 {% block content %}
     <div class="content on">
-        <header>
-            <a href="/"><img src="assets/logo.png" alt="Logo Foodfy"></a>
-
-            <div class="options">
-                <a href="/newrecipe">Sua receita</a>
-                <a href="/recipes">Receitas</a>
-            </div>
-
-            <div class="menu-section">
-                <div class="menu-toggle">
-                    <div class="one"></div>
-                    <div class="two"></div>
-                    <div class="three"></div>
-                </div>
-                <nav>
-                    <ul>
-                        <a href="/">PÁGINA INICIAL</a>
-                        <li>
-                            <a href="/newrecipe">SUA RECEITA</a>
-                        </li>
-                        <li>
-                            <a href="/recipes">OUTRAS RECEITAS</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+        
 
         <section id="hero">
-            {# <div class="text">
-                <h1>As melhores receitas</h1>
-                <h4>Aprenda a construir os melhores pratos com receitas criadas por profissionais do mundo inteiro.
-                </h4>
-            </div> #}
-
             <div class="carousel">
                 <button class="carousel_button carousel_button--left is-hidden">
                     <img src="/assets/arrow-left.svg" alt="arrow">
@@ -87,86 +56,40 @@
                     <button class="carousel-indicator"></button>
                 </div>
             </div>
-
         </section>
+
+
 
         <section id="acessos">
             <h2>Mais acessadas</h2>
             <div class="cards">
-                <div class="card shadow">
-                    <img src="assets/asinhas.png" alt="" id="1">
-                    <div class="card-text">
-                        <h4>Paprika Schnitzel</h4>
-                        <p>Por
-                            <span>Tastemade</span>
-                        </p>
-                    </div>
 
-                    <div class="card-text-n hide">
-                        <div class="top">
-                            <span>
-                                <img src="/assets/timer.svg" alt="Clock">
-                                <h4>50 MIN</h4>
-                            </span>
-                            <span>
-                                <img src="/assets/serving.svg" alt="Servings">
-                                <h4>6 PORÇÕES</h4>
-                            </span>
+                {% for recipe in recipes %}
+                    <div class="card shadow" id="{{ recipe.id }}">
+                        <img src="{{ recipe.image }}" alt="{{ recipe.title }}" id="{{ recipe.id }}">
+                        <div class="card-text">
+                            <h4>{{ recipe.title }}</h4>
+                            <p>Por
+                                <span>{{ recipe.author }}</span>
+                            </p>
                         </div>
 
-                        <a href="/newrecipe">VER RECEITA</a>
-                    </div>
-                </div>
+                        <div class="card-text-n hide">
+                            <div class="top">
+                                <span>
+                                    <img src="/assets/timer.svg" alt="Clock">
+                                    <h4>50 MIN</h4>
+                                </span>
+                                <span>
+                                    <img src="/assets/serving.svg" alt="Servings">
+                                    <h4>6 PORÇÕES</h4>
+                                </span>
+                            </div>
 
-                <div class="card shadow">
-                    <img src="assets/doce.png" alt="Docinhos pão-do-céu" id="2">
-                    <div class="card-text">
-                        <h4>Docinhos pão-do-céu</h4>
-                        <p>Por
-                            <span>Ricardo Golvea</span>
-                        </p>
-                    </div>
-
-                    <div class="card-text-n hide">
-                        <div class="top">
-                            <span>
-                                <img src="/assets/timer.svg" alt="Clock">
-                                <h4>50 MIN</h4>
-                            </span>
-                            <span>
-                                <img src="/assets/serving.svg" alt="Servings">
-                                <h4>8 PORÇÕES</h4>
-                            </span>
+                            <a href="/newrecipe">VER RECEITA</a>
                         </div>
-
-                        <a href="/newrecipe">VER RECEITA</a>
                     </div>
-                </div>
-
-                <div class="card shadow">
-                    <img src="assets/espaguete.png" alt="Espaguete ao alho" id="3">
-                    <div class="card-text">
-                        <h4>Espaguete ao alho</h4>
-                        <p>Por
-                            <span>Júlia Kinoto</span>
-                        </p>
-                    </div>
-
-                    <div class="card-text-n hide">
-                        <div class="top">
-                            <span>
-                                <img src="/assets/timer.svg" alt="Clock">
-                                <h4>50 MIN</h4>
-                            </span>
-                            <span>
-                                <img src="/assets/serving.svg" alt="Servings">
-                                <h4>8 PORÇÕES</h4>
-                            </span>
-                        </div>
-
-                        <a href="/newrecipe">VER RECEITA</a>
-                    </div>
-                </div>
+                {% endfor %}
 
             </div>
         </section>
