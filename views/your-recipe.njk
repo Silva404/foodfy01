@@ -3,7 +3,7 @@
 {% block styles %}
     <link rel="stylesheet" href="styles/about.css">
     <link rel="stylesheet" href="styles/newrecipecarousel.css">
-    
+
 {% endblock styles %}
 
 {% block title %}
@@ -22,15 +22,10 @@
 
                 <div class="carousel_track-container">
                     <ul class="carousel_track">
+                        {% for eae in recipes.image %}
                         <li class="carousel_slide current-slide">
-                            <img class="carousel_images" src="/assets/01.jpg" alt="">
-                        </li>
-                        <li class="carousel_slide">
-                            <img class="carousel_images" src="/assets/02.jpg" alt="">
-                        </li>
-                        <li class="carousel_slide">
-                            <img class="carousel_images" src="/assets/03.jpg" alt="">
-                        </li>
+                            <img class="carousel_images" src="{{ recipes.image }}" alt="">
+                        </li>{% endfor %}
                     </ul>
 
                 </div>
