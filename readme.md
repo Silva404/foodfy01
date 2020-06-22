@@ -1,18 +1,13 @@
 # Foodfy
-> Foodfy is a responsive web site to find your favorite recipes and share your worldwide!
+> Foodfy is a responsive web site to find and share your favorite recipes worldwide!
 
-[![NODE 12.18.0][npm-image]][npm-url]
 [![NPM 6.14.4][npm-image]][npm-url]
 
-![](../foodfy-desktop.gif)
-![](../foodfy-mobile.gif)
-<!-- <img src=”readme-gifs/foodfy-desktop.gif”>
-<img src=”readme-gifs/foodfy-mobile.gif”> -->
-<!-- <img src=”/readme-gifs/foodfy-mobile.gif” height="400px" width="400px"> -->
 
-
-
-
+<h1 align="left">
+    <img src="https://user-images.githubusercontent.com/62123441/85238123-244a3a00-b402-11ea-8463-e749b6baf8ff.gif" width="350">
+    <img src="https://user-images.githubusercontent.com/62123441/85238183-94f15680-b402-11ea-9fb7-f0ce8f6cc995.gif" width="200">
+</h1>
 
 
 ### Installation
@@ -35,7 +30,8 @@ $ npm start
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ### Autor
-Made by [Breno Silva](https://github.com/Silva404)
+Made by [Breno Silva](https://github.com/Silva404)  | 
+[Linkedin](https://www.linkedin.com/in/breno-silva-3604461a5/)
 
 
 
