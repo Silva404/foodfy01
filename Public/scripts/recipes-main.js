@@ -30,7 +30,7 @@ for (let card of cards) {
     card.addEventListener('click', () => {
         const recipeId = card.getAttribute('id')
 
-        window.location.href = `/your-recipe?id=${recipeId}`
+        window.location.href = `/your-recipe/${recipeId}`
     })
 }
 

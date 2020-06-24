@@ -28,25 +28,25 @@ server.get('/newrecipe', (req, res) => {
     res.render('new-recipe')
 })
 
-server.get('/page404', (req, res) => {
-    res.render('page404')
-})
+// server.get('/page404', (req, res) => {
+//     res.render('page404')
+// })
 
-server.get('/your-recipe', (req, res) => {
-    const id = req.query.id
+server.get('/your-recipe/:index', (req, res) => {
+    const id = req.params.index
 
     const recipe = data.find(recipe => {
         if (recipe.id == id) {
             return true
         }
     })
-    // if (!recipe) {
-    //     res.send('Page not founded')
-    // }
+    if (!recipe) {
+        res.status(404).render('page404')
+    }
 
     res.render('your-recipe', { recipes: recipe })
 })
 
 
 
-server.listen(3000)
+server.listen(4000)
