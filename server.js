@@ -33,12 +33,12 @@ server.get('/newrecipe', (req, res) => {
 // })
 
 server.get('/your-recipe/:index', (req, res) => {
-    for(let dado of data) {
-        data.push(data[dado])
-    }
+    data.forEach( (index) => {
+        data.push(index)
+    })
     
-    const pageId = req.params.index
-    const recipe = data[pageId]
+    
+    const recipe = data[req.params.index]
 
     if (!recipe) {
         res.status(404).render('page404')
@@ -59,6 +59,11 @@ server.listen(4000)
     //         return true
     //     }
     // })
+
+//               ou
+
+// const pageId = req.params.index
+// const recipe = data[pageId]
 
 //               ou
 
