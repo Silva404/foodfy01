@@ -33,13 +33,16 @@ server.get('/newrecipe', (req, res) => {
 // })
 
 server.get('/your-recipe/:index', (req, res) => {
-    const id = req.params.index
+    const idD = req.params.index
 
-    const recipe = data.find(recipe => {
-        if (recipe.id == id) {
-            return true
-        }
-    })
+    const id = ''
+    for (let i = 0; i < data.length; i++) {
+        id = data[i]
+    }
+    data.push('id')
+
+    const recipe = data.find(recipe => recipe.id == idD)
+
     if (!recipe) {
         res.status(404).render('page404')
     }
@@ -50,3 +53,11 @@ server.get('/your-recipe/:index', (req, res) => {
 
 
 server.listen(4000)
+
+
+
+  // const recipe = data.find(recipe => {
+    //     if (recipe.id == id) {
+    //         return true
+    //     }
+    // })
