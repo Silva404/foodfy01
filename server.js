@@ -32,17 +32,19 @@ server.get('/newrecipe', (req, res) => {
 //     res.render('page404')
 // })
 
-server.get('/your-recipe/:index', (req, res) => {
-    data.forEach( (index) => {
-        data.push(index)
-    })
-    
-    
-    const recipe = data[req.params.index]
+server.get('/your-recipe/:index', (req, res) => { 
+   
+    const index = req.params.index
 
-    if (!recipe) {
-        res.status(404).render('page404')
-    }
+    const recipe = data.find(recipe => recipe.id == index)
+
+    if (!recipe) return res.send('not found')
+
+    // const recipe = data[req.params.index]
+
+    // if (!recipe) {
+    //     res.status(404).render('page404')
+    // }
 
     res.render('your-recipe', { recipes: recipe })
 })
